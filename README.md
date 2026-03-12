@@ -1,5 +1,9 @@
 # Portlock
 
+<p align="center">
+  <img src="./portlock.png" alt="Portlock logo" width="180" />
+</p>
+
 [![npm version](https://img.shields.io/npm/v/portlock)](https://www.npmjs.com/package/portlock)
 [![CI](https://github.com/johndockery/portlock/actions/workflows/ci.yml/badge.svg)](https://github.com/johndockery/portlock/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
