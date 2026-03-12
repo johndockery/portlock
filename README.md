@@ -1,5 +1,9 @@
 # Portlock
 
+[![npm version](https://img.shields.io/npm/v/portlock)](https://www.npmjs.com/package/portlock)
+[![CI](https://github.com/johndockery/portlock/actions/workflows/ci.yml/badge.svg)](https://github.com/johndockery/portlock/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 Portlock gives each git worktree a deterministic local runtime identity.
 
 Instead of manually juggling ports across branches, Portlock assigns a stable base range to each worktree and derives the rest of your local topology from it:
@@ -224,6 +228,13 @@ npm pack --dry-run
 ```
 
 GitHub Actions workflows are included for CI and publishing.
+
+## Project Files
+
+- [Contributing](./CONTRIBUTING.md)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
+- [Security Policy](./SECURITY.md)
+- [Changelog](./CHANGELOG.md)
 
 ## License
 
