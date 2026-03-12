@@ -1,0 +1,43 @@
+{
+  "basePort": 3000,
+  "step": 100,
+  "stripPrefixes": ["john/", "feature/", "fix/"],
+  "services": {
+    "api": {
+      "offset": 0,
+      "env": {
+        "API_PORT": "{port}",
+        "API_HOST": "0.0.0.0",
+        "API_ORIGIN": "http://127.0.0.1:{port}"
+      }
+    },
+    "web": {
+      "offset": 1,
+      "env": {
+        "WEB_PORT": "{port}",
+        "WEB_ORIGIN": "http://127.0.0.1:{port}",
+        "NEXT_PUBLIC_API_URL": "http://127.0.0.1:{api}"
+      }
+    },
+    "workers": {
+      "offset": 80,
+      "env": {
+        "WORKERS_HEALTH_CHECK_PORT": "{port}"
+      }
+    }
+  },
+  "namespace": {
+    "env": {
+      "PORTLOCK_NAMESPACE": "grow:{claim}",
+      "REDIS_KEY_PREFIX": "grow:{claim}",
+      "PGDATABASE": "grow_{claim}"
+    }
+  },
+  "metadata": {
+    "env": {
+      "PORTLOCK_CLAIM": "{claim}",
+      "PORTLOCK_BASE": "{base}",
+      "PORTLOCK_LABEL": "{label}"
+    }
+  }
+}

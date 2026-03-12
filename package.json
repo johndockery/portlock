@@ -1,0 +1,44 @@
+{
+  "name": "portlock",
+  "version": "0.1.0",
+  "description": "Deterministic runtime identity for multi-agent git worktrees",
+  "author": "John Dockery",
+  "type": "module",
+  "bin": {
+    "portlock": "./src/cli.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "start": "node ./src/cli.js",
+    "prepublishOnly": "node --test"
+  },
+  "keywords": [
+    "git-worktree",
+    "ports",
+    "worktrees",
+    "local-development",
+    "multi-agent",
+    "developer-tools",
+    "cli"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johndockery/portlock.git"
+  },
+  "homepage": "https://github.com/johndockery/portlock#readme",
+  "bugs": {
+    "url": "https://github.com/johndockery/portlock/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
