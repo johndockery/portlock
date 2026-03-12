@@ -1,6 +1,6 @@
 {
   "name": "portlock",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Deterministic runtime identity for multi-agent git worktrees",
   "author": "John Dockery",
   "type": "module",
